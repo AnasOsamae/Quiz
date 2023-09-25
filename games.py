@@ -9,10 +9,14 @@ questions = {
 
 score = 0
 
+
+def user_answer(self):
+    user_answer = input("Please enter your answer: ")
+    return user_answer.lower()
+
 def ask_question(question, correct_answer):
     global score  
     print(question)
-    user_answer = input("Your answer: ").strip()
     if user_answer.lower() == correct_answer.lower():
         print("Correct!")
         score += 1
