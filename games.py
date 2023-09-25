@@ -14,13 +14,15 @@ def user_answer(self):
     user_answer = input("Please enter your answer: ")
     return user_answer.lower()
 
-def ask_question(question, correct_answer):
-    global score  
+def ask_question(self, question):
     print(question)
-    if user_answer.lower() == correct_answer.lower():
-        print("Correct!")
+
+def check_answer(self, correct_answer):
+    global score
+    if user_answer.lower() == correct_answer.lower(): 
+        print("Correct !")
         score += 1
-    else:
+    else :
         print(f"Incorrect, the correct answer is {correct_answer}\n")
 
 def run_quiz():
